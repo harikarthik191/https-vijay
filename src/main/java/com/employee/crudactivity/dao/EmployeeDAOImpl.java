@@ -24,6 +24,7 @@ public class EmployeeDAOimpl implements EmployeeDAO {
         List<Employee> employees = theQuery.getResultList();
         return employees;
     }
+                                          
 
     public Employee findById(int id) {
         Session currentSession = entityManager.unwrap(Session.class);
